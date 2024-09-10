@@ -2,10 +2,7 @@ import os
 import cv2
 from tqdm import tqdm
 
-video_data_path = "/home/vansh/Desktop/labelled_video_unlocked_vids"
-
-top_box = (0, 0, 960, 540)
-bottom_box = (0, 540, 960, 1080)
+video_data_path = "/workspace/group12"
 
 for vid_name in os.listdir(video_data_path):
     if vid_name.endswith('.mp4') is False:

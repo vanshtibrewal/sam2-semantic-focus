@@ -3,10 +3,12 @@ import shutil
 from tqdm import tqdm
 import numpy as np
 
-video_data_path = "/home/vansh/Desktop/labelled_data"
+video_data_path = "/workspace/group12"
 
 for vid_name in os.listdir(video_data_path):
     print(vid_name)
+    if vid_name.endswith('.mp4'):
+        continue
     vid_path = os.path.join(video_data_path, vid_name)
     video_base_name = os.path.splitext(vid_name)[0]
     output_dir = os.path.join(video_data_path, video_base_name)

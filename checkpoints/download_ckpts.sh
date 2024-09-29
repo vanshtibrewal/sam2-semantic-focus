@@ -19,6 +19,8 @@ sam2_hiera_l_url="${BASE_URL}sam2_hiera_large.pt"
 echo "Downloading sam2_hiera_tiny.pt checkpoint..."
 wget $sam2_hiera_t_url || { echo "Failed to download checkpoint from $sam2_hiera_t_url"; exit 1; }
 
+echo "Tiny checkpoint is downloaded successfully."
+
 # echo "Downloading sam2_hiera_small.pt checkpoint..."
 # wget $sam2_hiera_s_url || { echo "Failed to download checkpoint from $sam2_hiera_s_url"; exit 1; }
 
